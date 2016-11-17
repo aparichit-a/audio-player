@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* CSS for html5 audio */
+
+/* SEEK BAR STUFF */
+.seekslider-outer{
+    background-color: #156598;
+    border: 1px solid #2082BF;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 0 0 2px #00416B inset;
+    float: left;
+    height: 12px;
+    margin: 7px 0 0;
+    padding: 0 3px;
+    position: relative;
+    width: 35%;
+}
+
+#seekslider {
+	
+    width: 100%;/*300px;*/float:left;margin:12px 0px 0 0;
+	padding:0 2px;
+	position: relative;
+}
+
+#seekslider .ui-slider-handle {
+    background: url(images/timer_slider.png) no-repeat;
+    height: 18px;
+    top: -15px;
+    width:17px;
+}
+
+.ui-slider-handle {
+    cursor: default;
+    display: block;
+    margin-left: -0.6em;
+    outline: medium none;
+    position: absolute;
+    z-index: 2;
+}
+
+.ui-slider-range {
+	 background: url(images/progressbar_bg.png)repeat-x #ffca2e;
+    border: 0 none;
+    bottom: 2px;
+    display: block;
+    height:8px;
+    left:0px;
+    position: absolute;
+	border-radius: 5px;
+    width:100%;
+    z-index: 1;
+}
+
+#ui-slider-range2 {
+	background: #B1A688;
+    border: 0 none;
+    bottom: 2px;
+    display: block;
+    height:8px;
+    left:0px;
+    position: absolute;
+    z-index: 1;
+	border-radius: 5px;
+}
+
+/* End seek bar */
+
+/* Volume slide bar */
+.volume-box {
+    bottom: 10px;
+    color: #FFFFFF;
+    float: left;
+    padding: 14px 8px 0 15px;
+    /*right: 18px;*/
+    width: 125px;
+    height: 34px;
+    opacity: 1;
+    position: relative;
+    visibility: visible;
+	background: url(images/v_bdr.png) repeat-y 0 0;
+}
+
+.volume-slider {
+    background: #2082BF;
+    border-radius:3px;
+    height:4px;
+    left: 10px;
+    top:8px;
+    position: relative;
+    transition: all 0.1s ease-in-out 0s;
+    width:80px;float:left;
+}
+
+.volume-slider .ui-slider-range {
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: 4px;
+    top: 0;
+}
+
+.volume-slider .ui-slider-handle {
+   background: url(images/volume_slider.png) no-repeat;
+    height: 16px;
+    left: -4px;
+    margin-bottom: -0.6em;
+    
+    width: 17px;top:-6px
+}
+/* Volume slide bar end */
